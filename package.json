@@ -1,0 +1,16 @@
+{
+  "name": "horse-petlife-guardian",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/tailwind.min.css --minify",
+    "build:images": "node ./scripts/build-images.mjs",
+    "build": "npm run build:css && npm run build:images"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17"
+  }
+}
